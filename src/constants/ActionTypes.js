@@ -1,0 +1,7 @@
+// Counter
+export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
+export const DECREMENT_COUNTER = 'DECREMENT_COUNTER'
+
+// shici
+export const CHANGE_SHICI = 'CHANGE_SHICI'
+export const CHANGE_SHICI_RES = 'CHANGE_SHICI_RES'
