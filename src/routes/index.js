@@ -12,6 +12,7 @@ function Routes() {
       <Container>
         <Header />
         <Route path="/" component={ShiciContainer} />
+        <Header />
         <Route path="/counter" component={CounterContainer} />
       </Container>
     </Router>
