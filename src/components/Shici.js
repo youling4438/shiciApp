@@ -8,6 +8,7 @@ const ChangeShici = styled.div`
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 20px;
 
   .changeButton{
     cursor:pointer;
