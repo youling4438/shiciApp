@@ -2,7 +2,7 @@ import { CHANGE_SHICI_RES, CHANGE_SHICI } from 'constants/ActionTypes'
 import { call, put, takeEvery } from 'redux-saga/effects'
 import shiciApi from '../services/shici'
 
-export function* changeShici(action) {
+export function* changeShici() {
   const shici = '纵使晴明无雨色，入云深处亦沾衣'
   try {
     const data = yield call(shiciApi.change);
@@ -13,6 +13,6 @@ export function* changeShici(action) {
   }
 }
 
-export function* shici() {
+export default function* shici() {
   yield* takeEvery(CHANGE_SHICI, changeShici)
 }
