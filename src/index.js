@@ -10,11 +10,12 @@ import shici from './sagas/shici'
 import 'styles/global-styles'
 import registerServiceWorker from 'utils/registerServiceWorker'
 
-const sagaMiddleware = createSagaMiddleware(shici)
+const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
   Reducers,
   applyMiddleware(sagaMiddleware)
 )
+sagaMiddleware.run(shici)
 render(
   <Provider store={store}>
     <Routes />
