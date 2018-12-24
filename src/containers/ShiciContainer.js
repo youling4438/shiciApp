@@ -13,15 +13,10 @@ class ShiciContainer extends React.Component {
     oneShici: PropTypes.string.isRequired,
   }
 
-  change = () => {
-    console.log('this.props.change()');
-    this.props.change()
-  }
-
   render() {
     return (
       <Shici
-        change={this.change}
+        change={this.props.change}
         oneShici={this.props.oneShici}
       />
     )

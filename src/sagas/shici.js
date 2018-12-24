@@ -13,6 +13,17 @@ export function* changeShici() {
   }
 }
 
-export default function* shici() {
+export function* shici() {
+  console.log('shici s');
   yield* takeEvery(CHANGE_SHICI, changeShici)
+  console.log('shici e');
 }
+
+// // single entry point to start all Sagas at once
+// export default function* rootSaga() {
+//   console.log('rootSaga s ');
+//   yield [
+//     shici()
+//   ]
+//   console.log('rootSaga e');
+// }
