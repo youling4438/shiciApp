@@ -9,14 +9,14 @@ import * as ShiciActions from 'actions/shici'
 
 class ShiciContainer extends React.Component {
   static propTypes = {
-    change: PropTypes.func.isRequired,
+    changeShici: PropTypes.func.isRequired,
     oneShici: PropTypes.string.isRequired,
   }
 
   render() {
     return (
       <Shici
-        change={this.props.change}
+        change={this.props.changeShici}
         oneShici={this.props.oneShici}
       />
     )

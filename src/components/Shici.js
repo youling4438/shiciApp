@@ -27,8 +27,8 @@ function Shici({ change, oneShici }) {
       <Intro>
           {oneShici}
       </Intro>
-      <ChangeShici onClick={change}>
-        <a className="changeButton">切换诗词</a>
+      <ChangeShici>
+        <a onClick={change} className="changeButton">切换诗词</a>
       </ChangeShici>
     </section>
   )
