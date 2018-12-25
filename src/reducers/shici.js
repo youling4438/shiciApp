@@ -1,4 +1,7 @@
-import { CHANGE_SHICI_RES, CHANGE_SHICI } from 'constants/ActionTypes'
+import {
+  CHANGE_SHICI_RES,
+  // CHANGE_SHICI
+} from 'constants/ActionTypes'
 
 // const oneShici = '东边日出西边雨，道是无晴却有晴'
 const shiciList = [
@@ -22,11 +25,11 @@ const oneShici = getShiciByRandrom()
 
 export default function shici(state = { oneShici }, action) {
   switch (action.type) {
-    case CHANGE_SHICI:
-      const hardCodeShici = getShiciByRandrom()
-      return {
-        "oneShici": hardCodeShici
-      }
+    // case CHANGE_SHICI:
+    //   const hardCodeShici = getShiciByRandrom()
+    //   return {
+    //     "oneShici": hardCodeShici
+    //   }
     case CHANGE_SHICI_RES:
       const { shici } = action
       return {

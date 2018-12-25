@@ -8,7 +8,7 @@ import Routes from 'routes'
 import Reducers from 'reducers'
 import rootSaga from './sagas'
 import 'styles/global-styles'
-// import registerServiceWorker from 'utils/registerServiceWorker'
+import registerServiceWorker from 'utils/registerServiceWorker'
 
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
@@ -16,14 +16,14 @@ const store = createStore(
   applyMiddleware(sagaMiddleware)
 )
 sagaMiddleware.run(rootSaga)
-function renderDom() {
+// function renderDom() {
   render(
     <Provider store={store}>
       <Routes />
     </Provider>,
     document.getElementById('root')
   )
-}
-// registerServiceWorker()
-renderDom()
-store.subscribe(renderDom)
+// }
+registerServiceWorker()
+// renderDom()
+// store.subscribe(renderDom)
