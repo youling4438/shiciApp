@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import * as ShiciActions from 'actions/shici'
 
 class ShiciContainer extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.changeShici = this.changeShici.bind(this)
   }
@@ -20,6 +20,7 @@ class ShiciContainer extends React.Component {
   changeShici() {
     console.log('changeShici -------------------------');
     this.props.changeShici()
+    console.log('changeShici -------------------------');
   }
   render() {
     return (
