@@ -2,13 +2,7 @@
 export default {
   change() {
     try {
-      fetch("https://api.gushi.ci/all.json").then((result) => result.json()).then((jsonResult) => {
-        // const { content, origin, author, category } = jsonResult;
-        const { content } = jsonResult;
-        return {
-          "oneShici": content,
-        }
-      });
+      return fetch("https://api.gushi.ci/all.json");
     }
     catch (err) {
       throw new Error(err);
