@@ -1,9 +1,10 @@
-import { shici } from './shici'
+import { all } from 'redux-saga/effects'
+
+import shici from './shici'
+
 
 export default function* rootSaga() {
-  console.log('rootSaga s ');
-  yield [
-    shici()
-  ]
-  console.log('rootSaga e');
+    yield all([
+        ...shici(),
+    ])
 }
