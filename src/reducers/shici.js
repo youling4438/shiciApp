@@ -1,7 +1,7 @@
 import {
   CHANGE_SHICI_RES,
   // CHANGE_SHICI
-} from 'constants/ActionTypes'
+} from '../constants/ActionTypes'
 
 // const oneShici = '东边日出西边雨，道是无晴却有晴'
 const shiciList = [

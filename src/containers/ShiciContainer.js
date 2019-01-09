@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Shici } from 'components'
+import { Shici } from '../components'
 import { createStructuredSelector, createSelector } from 'reselect'
 
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import * as ShiciActions from 'actions/shici'
+import * as ShiciActions from '../actions/shici'
 
 class ShiciContainer extends React.Component {
   constructor(props) {
