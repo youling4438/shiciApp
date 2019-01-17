@@ -7,15 +7,15 @@ import styled from 'styled-components'
 const Container = styled.div`text-align: center;`
 
 function Routes() {
-  return (
-    <Router>
-      <Container>
-        <Header />
-        <Route path="/" component={ShiciContainer} />
-        <Header />
-      </Container>
-    </Router>
-  )
+	return (
+		<Router>
+			<Container>
+				<Header />
+				<Route path="/" component={ShiciContainer} />
+				<Header />
+			</Container>
+		</Router>
+	)
 }
 
 export default Routes
