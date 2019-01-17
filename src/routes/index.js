@@ -1,5 +1,5 @@
 import React from 'react'
-import { CounterContainer, ShiciContainer } from '../containers'
+import { ShiciContainer } from '../containers'
 import { Header } from '../components'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import styled from 'styled-components'
@@ -13,7 +13,6 @@ function Routes() {
         <Header />
         <Route path="/" component={ShiciContainer} />
         <Header />
-        <Route path="/counter" component={CounterContainer} />
       </Container>
     </Router>
   )
